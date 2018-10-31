@@ -57,7 +57,7 @@ index_window = 14
 timeSlicePrice = historicalPrices.iloc[len(historicalPrices)-index_window:len(historicalPrices)]
 timeSliceMarketCaps = historicalMarketCaps.iloc[len(historicalPrices)-index_window:len(historicalPrices)]
 
-#Replace any zeroes or '-' with NaN, then drop all NaN columns from the past 14 days.
+#Replace any zeros or '-' with NaN, then drop all NaN columns from the past 14 days.
 #This needs to be done because some coins may drop to zero in the market
 #However, because we focus on the top 15 coins, this is extremely unlikely to happen to any coins of interest
 timeSlicePrice_NaNs = timeSlicePrice.replace(0, pd.np.nan).replace("-", pd.np.nan)
