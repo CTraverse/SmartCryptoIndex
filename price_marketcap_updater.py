@@ -9,7 +9,7 @@ Created on Thu Sep 13 12:21:05 2018
 """
 This script updates the master coin dataframe that is stored as a .csv file.
 It opens up the coin csv and determines if the price data is up to date.
-The master coin file is indexed by date, so it grabs the bottom row date and determiens
+The master coin file is indexed by date, so it grabs the bottom row date and determines
 how long ago the file was updated. It then grabs the market data for each coin in the dataframe
 for the number of days that it hasn't been updated and appends the new market data to the end of the
 coins dataframe.
